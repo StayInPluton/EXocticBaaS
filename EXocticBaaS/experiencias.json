@@ -1,0 +1,84 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "preco": 50.0,
+      "imagem": "caminhada_na_floresta.jpg",
+      "descricao": "Explore uma floresta exuberante em uma caminhada guiada por especialistas.",
+      "nome": "Caminhada na Floresta",
+      "categoria": "Aventura"
+    },
+    {
+      "id": 2,
+      "preco": 80.0,
+      "imagem": "mergulho_em_recife.jpg",
+      "descricao": "Descubra a beleza subaquática de um recife de coral em um mergulho emocionante.",
+      "nome": "Mergulho em Recife",
+      "categoria": "Aventura"
+    },
+    {
+      "id": 3,
+      "preco": 120.0,
+      "imagem": "jantar_sob_as_estrelas.jpg",
+      "descricao": "Desfrute de um jantar romântico sob as estrelas com um cardápio exclusivo.",
+      "nome": "Jantar sob as Estrelas",
+      "categoria": "Romântico"
+    },
+    {
+      "id": 4,
+      "preco": 200.0,
+      "imagem": "escalada_na_montanha.jpg",
+      "descricao": "Experimente a emoção da escalada em uma montanha desafiadora.",
+      "nome": "Escalada na Montanha",
+      "categoria": "Aventura"
+    },
+    {
+      "id": 5,
+      "preco": 150.0,
+      "imagem": "passeio_de_bicicleta.jpg",
+      "descricao": "Faça um passeio de bicicleta pelas trilhas panorâmicas da região.",
+      "nome": "Passeio de Bicicleta",
+      "categoria": "Aventura"
+    },
+    {
+      "id": 6,
+      "preco": 180.0,
+      "imagem": "massagem_relaxante.jpg",
+      "descricao": "Relaxe e renove suas energias com uma massagem relaxante.",
+      "nome": "Massagem Relaxante",
+      "categoria": "Bem-estar"
+    },
+    {
+      "id": 7,
+      "preco": 100.0,
+      "imagem": "tour_gastronomico.jpg",
+      "descricao": "Descubra os sabores locais em um tour gastronômico imperdível.",
+      "nome": "Tour Gastronômico",
+      "categoria": "Culinária"
+    },
+    {
+      "id": 8,
+      "preco": 75.0,
+      "imagem": "passeio_de_barco.jpg",
+      "descricao": "Navegue pelas águas cristalinas em um relaxante passeio de barco.",
+      "nome": "Passeio de Barco",
+      "categoria": "Passeio"
+    },
+    {
+      "id": 9,
+      "preco": 90.0,
+      "imagem": "aula_de_surf.jpg",
+      "descricao": "Aprenda a surfar com instrutores experientes em uma aula divertida.",
+      "nome": "Aula de Surf",
+      "categoria": "Esporte"
+    },
+    {
+      "id": 10,
+      "preco": 130.0,
+      "imagem": "passeio_de_cavalo.jpg",
+      "descricao": "Curta a natureza em um agradável passeio a cavalo pela região.",
+      "nome": "Passeio de Cavalo",
+      "categoria": "Aventura"
+    }
+  ]
+}
