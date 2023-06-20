@@ -1,8 +1,48 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('exoctic', 'root', 'root', {
+  host: 'localhost',
+  dialect: 'mysql'
+});
 
 const app = express();
 app.use(bodyParser.json());
+
+const Administracao = sequelize.define('Administracao', {
+  id_administracao: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  nomel: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  senha: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  Banner_id_banner: {
+    type: Sequelize.INTEGER,
+    allowNull: false
+  }
+}, {
+ freezeTablename: true
+});
+
+Administracao.sync({})
+  .then(() => {
+    console.log('Tabela adm criada com sucesso');
+  })
+  .catch((error) => {
+    console.log('Erro ao criar tabela adm:', error);
+  });
 
 // Dados dos administradores (exemplo)
 let admins = [];
@@ -17,7 +57,7 @@ app.post('/admin/cadastro', (req, res) => {
   }
 
   // Cria um novo administrador
-  const novoAdmin = { nome, email, senha };
+  const novoAdmin = { id_administracao,nome, email, senha };
 
   // Adiciona o novo administrador à lista de administradores
   admins.push(novoAdmin);
@@ -72,6 +112,8 @@ app.get('/admin/:nome/atividades', (req, res) => {
   // Retorna as atividades do administrador
   res.json(atividades);
 });
+
+
 
 // Inicia o servidor
 app.listen(3000, () => {
